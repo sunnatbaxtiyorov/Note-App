@@ -60,3 +60,8 @@ function save(){
  clear.addEventListener('click', () => {
  inputs.forEach(input => input.value = '');
  });
+
+ function remove(){
+     localStorage.removeItem('data');
+     document.getElementById("output").style.display = "none";
+ }
